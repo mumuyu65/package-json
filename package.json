@@ -1,0 +1,39 @@
+{
+  "name": "package-json",
+  "version": "1.0.0",
+  "description": "this is a description of package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --display-error-details --display-modules",
+    "start": "webpack-dev-server --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mumuyu65/package-json.git"
+  },
+  "keywords": [
+    "package.json"
+  ],
+  "author": "yangyangyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mumuyu65/package-json/issues"
+  },
+  "homepage": "https://github.com/mumuyu65/package-json#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.1.2",
+    "redux": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.3.13",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
