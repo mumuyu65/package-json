@@ -1,4 +1,4 @@
-# package-json
+# webpack usage
 
 
 ## git clone https://github.com/mumuyu65/package-json.git
@@ -11,5 +11,5 @@
 
 ## npm run start
 
-地址栏中输入：http://localhost:8080/index.html
+碌脴脰路脌赂脰脨脢盲脠毛拢潞http://localhost:8080/index.html
 
