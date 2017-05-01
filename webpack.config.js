@@ -2,20 +2,26 @@ var path = require ('path');
 
 var webpack = require ('webpack');
 
+console.log('项目构建在：'+__dirname);
+
 var config={
 	entry:{
-		path:path.resolve(__dirname,'./index')
+		path:path.resolve(__dirname,'./vue/main')
 	},
 	output:{
 		path:path.resolve(__dirname,'./dist'),
+		publicPath: '/dist/',
 		filename:'bundle.js'
 	},
 	module:{
-		loaders: [{
-  			test: /\.js$/, // 匹配.js文件，如果通过则使用下面的loader
-  			exclude: /node_modules/, // 排除node_modules文件夹
-  			loader: 'babel-loader' // 使用babel（babel-loader的简写）作为loader
- 		}]
+		loaders: [
+			{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+			{ test: /\.css$/, loader: 'style-loader!css-loader'},
+			{test: /\.vue$/, loader: 'vue-loader'},
+		]
+	},
+	resolveLoader: {
+		root: path.join(__dirname, 'node_modules'),
 	},
 	debug:true,
 	devtools:'source-map',
@@ -25,8 +31,13 @@ var config={
 		progress:true,
 		hot:true,
 		contentBase:__dirname,
-		host:'0.0.0.0'
-	}
+		host:'0.0.0.0',
+		port:3000
+	},
+	plugins:[
+		new webpack.HotModuleReplacementPlugin()
+	]
+
 };
 
 module.exports = config

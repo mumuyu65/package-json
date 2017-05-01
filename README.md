@@ -1,15 +1,14 @@
 # webpack usage
 
+## git clone https://github.com/mumuyu65/webpackUsage.git
 
-## git clone https://github.com/mumuyu65/package-json.git
+## cd webpackUsage
 
-## cd package-json
-
-## npm install 
+## npm install
 
 ## npm run build
 
 ## npm run start
 
-µØÖ·À¸ÖÐÊäÈë£ºhttp://localhost:8080/index.html
+open your browser with http://localhost:8080/index.html
 
