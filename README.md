@@ -1,14 +1,15 @@
 # webpack usage
+` this is a demo for webpack and vue usage`
 
-## git clone https://github.com/mumuyu65/webpackUsage.git
+1. git clone https://github.com/mumuyu65/webpackUsage.git
 
-## cd webpackUsage
+2. cd webpackUsage
 
-## npm install
+3. npm install
 
-## npm run build
+4. npm run build
 
-## npm run start
+5. npm run start
 
-open your browser with http://localhost:8080/index.html
+6. open your browser with http://localhost:3000/
 
